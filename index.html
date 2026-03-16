@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VOLSKA | Premium Jewelry & Watches</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Promo -->
+    <div class="promo-banner">
+      <span>Up to 30% OFF Selected Styles</span>
+      <button class="promo-cta" data-scroll-to="#catalog">
+        Shop the spring event
+      </button>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+      <div class="header-inner">
+        <button class="mobile-menu-toggle"><span></span><span></span></button>
+
+        <button class="brand" id="brand-home">
+          <span class="brand-mark">V</span>
+          <span class="brand-word">VOLSKA</span>
+        </button>
+
+        <nav class="primary-nav">
+          <button class="nav-link" data-filter-category="all">All</button>
+          <button class="nav-link" data-filter-category="watches">
+            Watches
+          </button>
+          <button class="nav-link" data-filter-category="necklaces">
+            Necklaces
+          </button>
+          <button class="nav-link" data-filter-category="rings">Rings</button>
+          <button class="nav-link" data-filter-category="bracelets">
+            Bracelets
+          </button>
+        </nav>
+
+        <div class="header-actions">
+          <div class="search">
+            <input
+              id="search-input"
+              type="search"
+              placeholder="Search VOLSKA"
+            />
+            <button id="search-button">Search</button>
+          </div>
+
+          <button class="icon-button" id="wishlist-button">
+            <span class="icon-heart"></span>
+          </button>
+
+          <button class="icon-button cart-button" id="cart-button">
+            <span class="icon-bag"></span>
+            <span class="cart-count" id="cart-count">0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-carousel" id="hero-carousel">
+          <!-- SLIDE 1 -->
+          <article class="hero-slide is-active">
+            <div class="hero-copy">
+              <p class="eyebrow">Spring Edit 2026</p>
+
+              <h1>Spring Sale — Up to 30% Off Selected Styles</h1>
+
+              <p class="hero-subtitle">
+                Crystal-embellished watches, luminous necklaces and refined
+                rings designed to catch every light.
+              </p>
+
+              <div class="hero-actions">
+                <button class="btn-primary" data-scroll-to="#catalog">
+                  Shop Spring Styles
+                </button>
+
+                <button class="btn-ghost" data-scroll-to="#about">
+                  About VOLSKA
+                </button>
+              </div>
+            </div>
+
+            <div class="hero-visual">
+              <img src="images/télécharger (43).jpg" />
+            </div>
+          </article>
+
+          <!-- SLIDE 2 -->
+          <article class="hero-slide">
+            <div class="hero-copy">
+              <p class="eyebrow">Signature Crystals</p>
+
+              <h1>Signature Light, Defined by VOLSKA</h1>
+
+              <p class="hero-subtitle">
+                Timeless silhouettes with a modern German edge, crafted for
+                everyday brilliance.
+              </p>
+
+              <div class="hero-actions">
+                <button class="btn-primary" data-filter-category="necklaces">
+                  Shop Necklaces
+                </button>
+
+                <button class="btn-ghost" data-filter-category="rings">
+                  Explore Rings
+                </button>
+              </div>
+            </div>
+
+            <div class="hero-visual">
+              <img src="images/tail.jpg" />
+            </div>
+          </article>
+
+          <!-- SLIDE 3 -->
+          <article class="hero-slide">
+            <div class="hero-copy">
+              <p class="eyebrow">City Lights</p>
+
+              <h1>VOLSKA Watches for After Dark</h1>
+
+              <p class="hero-subtitle">
+                Minimal dials, crystal bezels and interchangeable straps for
+                every moment.
+              </p>
+
+              <div class="hero-actions">
+                <button class="btn-primary" data-filter-category="watches">
+                  Shop Watches
+                </button>
+
+                <button class="btn-ghost" data-scroll-to="#catalog">
+                  View All Jewelry
+                </button>
+              </div>
+            </div>
+
+            <div class="hero-visual">
+              <img src="images/télécharger (41).jpg" />
+            </div>
+          </article>
+
+          <div class="hero-controls">
+            <button class="hero-prev"></button>
+            <button class="hero-next"></button>
+          </div>
+
+          <div class="hero-dots" id="hero-dots"></div>
+        </div>
+      </section>
+
+      <!-- FEATURED -->
+      <section class="featured-section" id="featured">
+        <header class="section-header">
+          <h2>Featured Now</h2>
+          <p>Luminous pieces curated for the season.</p>
+        </header>
+
+        <div class="featured-grid">
+          <article class="featured-card">
+            <div class="featured-media">
+              <img src="images/Up to the Minute.jpg" alt="img" />
+            </div>
+
+            <div class="featured-copy">
+              <p class="eyebrow">The VOLSKA Edit</p>
+
+              <h3>Crystal Watches</h3>
+
+              <p>
+                Sharp architectural lines softened with precision-set crystals.
+              </p>
+
+              <button class="text-link" data-filter-category="watches">
+                Shop watches
+              </button>
+            </div>
+          </article>
+
+          <article class="featured-card">
+            <div class="featured-media">
+              <img src="images/Armour in Diamonds.jpg" />
+            </div>
+
+            <div class="featured-copy">
+              <p class="eyebrow">Layered Story</p>
+
+              <h3>Necklaces & Bracelets</h3>
+
+              <p>
+                Fine chains, bold links and pavé details to stack or stand
+                alone.
+              </p>
+
+              <button class="text-link" data-filter-category="necklaces">
+                Explore necklaces
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- CATALOG -->
+      <section class="catalog" id="catalog">
+        <header class="catalog-header">
+          <div class="catalog-title-group">
+            <h2>All Jewelry</h2>
+            <p class="catalog-count" id="catalog-count">35 pieces</p>
+          </div>
+        </header>
+
+        <div class="products-grid" id="products-grid"></div>
+
+        <div class="products-swipe" id="products-swipe">
+          <button class="swipe-nav prev" id="swipe-prev"></button>
+
+          <div class="swipe-track">
+            <div class="swipe-item-container" id="swipe-item-container"></div>
+          </div>
+
+          <button class="swipe-nav next" id="swipe-next"></button>
+
+          <div class="swipe-indicator" id="swipe-indicator"></div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="about" id="about">
+        <header class="section-header">
+          <h2>About VOLSKA</h2>
+        </header>
+
+        <div class="about-layout">
+          <div class="about-copy">
+            <p>
+              VOLSKA is a premium German-inspired jewelry house offering
+              watches, necklaces, rings and bracelets.
+            </p>
+
+            <p>
+              We blend timeless European craftsmanship with modern architectural
+              sensibility.
+            </p>
+
+            <p>
+              From luminous crystal watches to sculptural rings and barely-there
+              chains.
+            </p>
+          </div>
+
+          <div class="about-media">
+            <img src="images/télécharger (46).jpg" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="brand-mark">V</span>
+          <span class="brand-word">VOLSKA</span>
+          <p>Everyday light, considered in detail.</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© VOLSKA</span>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
