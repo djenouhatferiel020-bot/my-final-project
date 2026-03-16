@@ -148,7 +148,7 @@ document.addEventListener("DOMContentLoaded", () => {
         meta: "Drop pendant, round stones",
       },
       {
-        id: "ring-signet",
+        id: "rings",
         name: "Bound Together -Stephen Webster 18k",
         category: "rings",
         image: "images/img12.jpg",
@@ -225,7 +225,7 @@ document.addEventListener("DOMContentLoaded", () => {
         meta: "Polished links, crystal bar",
       },
       {
-        id: "bracelet-tennis",
+        id: "bracelet-tennis-silver",
         name: "Au 750 HERMES",
         category: "bracelets",
         image: "images/img19.jpg",
@@ -236,7 +236,7 @@ document.addEventListener("DOMContentLoaded", () => {
         meta: "Full crystal line, clasp",
       },
       {
-        id: "bracelet-tennis",
+        id: "bracelet-tennis-rose",
         name: "ONorth-South Pear Sequenced Diamod",
         category: "bracelets",
         image: "images/img20.jpg",
@@ -291,7 +291,7 @@ document.addEventListener("DOMContentLoaded", () => {
         meta: "Crystal watch with pendant",
       },
       {
-        id: "watch",
+        id: "watch-van-cleef",
         name: "Van Cleef temps",
         category: "watch",
         image: "images/imgg.jpg",
@@ -335,7 +335,7 @@ document.addEventListener("DOMContentLoaded", () => {
         meta: "Two textures to mix",
       },
       {
-        id: "watch",
+        id: "watch-octagon",
         name: "Octagon Crystaline",
         category: "watches",
         image: "images/img28.jpg",

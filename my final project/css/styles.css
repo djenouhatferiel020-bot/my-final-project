@@ -20,7 +20,7 @@ body {
     sans-serif;
   color: #111;
   background-color: #ffffff;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 img {
@@ -49,7 +49,7 @@ a {
   background: linear-gradient(90deg, #111 0%, #222 40%, #111 100%);
   color: #f8f5f0;
   gap: 0.75rem;
-  font-size: 0.78rem;
+  font-size: 0.85rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
@@ -89,16 +89,20 @@ a {
   position: sticky;
   top: 2.1rem;
   z-index: 40;
-  background: rgba(255, 255, 255, 0.9);
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.98),
+    rgba(255, 255, 255, 0.9)
+  );
   backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.08);
 }
 
 .header-inner {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 1rem 1.25rem;
+  padding: 1.15rem 1.5rem;
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -116,24 +120,35 @@ a {
 }
 
 .brand-mark {
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 2rem;
+  height: 2rem;
   border-radius: 50%;
-  border: 1px solid #111;
+  border: 1.5px solid #111;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   font-family: "Playfair Display", serif;
-  font-size: 0.9rem;
-  letter-spacing: 0.08em;
+  font-size: 1.1rem;
+  letter-spacing: 0.12em;
 }
 
 .brand-word {
   font-family: "Playfair Display", serif;
-  font-size: 1.2rem;
-  letter-spacing: 0.32em;
+  font-size: 1.6rem;
+  letter-spacing: 0.4em;
   text-transform: uppercase;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+.brand-word::after {
+  content: "";
+  display: block;
+  margin-top: 0.15rem;
+  width: 2.8rem;
+  height: 2px;
+  background: linear-gradient(90deg, #111, #c7b39a);
+  border-radius: 999px;
 }
 
 .mobile-menu-toggle {
@@ -160,7 +175,7 @@ a {
 .nav-link {
   border: none;
   background: transparent;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 0.18em;
   padding: 0.35rem 0.65rem;
@@ -274,7 +289,7 @@ a {
 }
 
 .hero-carousel {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 2.5rem 1rem 2.75rem;
   position: relative;
@@ -314,12 +329,12 @@ a {
 .hero h1 {
   font-family: "Playfair Display", serif;
   font-weight: 600;
-  font-size: 2.1rem;
+  font-size: clamp(2.1rem, 3.2vw + 0.5rem, 3rem);
   letter-spacing: 0.02em;
 }
 
 .hero-subtitle {
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   color: #555;
   max-width: 32rem;
 }
@@ -444,20 +459,20 @@ a {
 
 /* Featured */
 .section-header {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 2.2rem 1rem 1rem;
 }
 
 .section-header h2 {
   font-family: "Playfair Display", serif;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
 .section-header p {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: #555;
   margin-top: 0.45rem;
 }
@@ -467,12 +482,12 @@ a {
 }
 
 .featured-grid {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 1rem 2rem;
   display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: 1.4rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.2rem;
 }
 
 .featured-card {
@@ -510,11 +525,11 @@ a {
 
 .featured-copy h3 {
   font-family: "Playfair Display", serif;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .featured-copy p {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: #555;
 }
 
@@ -556,7 +571,7 @@ a {
 }
 
 .catalog-header {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 2.1rem 1rem 1.4rem;
   display: flex;
@@ -692,18 +707,18 @@ a {
 
 /* Products grid */
 .products-grid {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 1rem 2rem;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
+  gap: 1.1rem;
 }
 
 .product-card {
   background: #ffffff;
   border-radius: 1.2rem;
-  padding: 0.7rem;
+  padding: 0.6rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -723,7 +738,7 @@ a {
 .product-media {
   position: relative;
   border-radius: 1rem;
-  padding-top: 120%;
+  padding-top: 115%;
   overflow: hidden;
   background:
     radial-gradient(circle at 0% 0%, #f4ede4, transparent 60%),
@@ -773,12 +788,12 @@ a {
 }
 
 .product-name {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 500;
 }
 
 .product-meta {
-  font-size: 0.76rem;
+  font-size: 0.8rem;
   color: #777;
 }
 
@@ -789,7 +804,7 @@ a {
 }
 
 .product-price {
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   font-weight: 500;
 }
 
@@ -881,7 +896,7 @@ a {
 }
 
 .about-layout {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 1rem 2.5rem;
   display: grid;
@@ -890,7 +905,7 @@ a {
 }
 
 .about-copy {
-  font-size: 0.88rem;
+  font-size: 0.95rem;
   color: #444;
   display: flex;
   flex-direction: column;
@@ -912,7 +927,7 @@ a {
 }
 
 .footer-top {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 2.2rem 1rem 1.5rem;
   display: grid;
@@ -1176,56 +1191,10 @@ a {
   }
 
   .hero h1 {
-    font-size: 2.3rem;
+    font-size: 2.6rem;
   }
 
   .products-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
-}
-.hero-visual-1 {
-  background-image: url("../images/hero1.jpg");
-}
-
-.hero-visual-2 {
-  background-image: url("../images/hero2.jpg");
-}
-
-.hero-visual-3 {
-  background-image: url("../images/hero3.jpg");
-}
-
-.hero-visual {
-  background-size: cover;
-  background-position: center;
-  border-radius: 20px;
-  min-height: 400px;
-}
-
-.hero-visual-1 {
-  background-image: url("../images/hero1.jpg");
-}
-
-.hero-visual-2 {
-  background-image: url("../images/hero2.jpg");
-}
-
-.hero-visual-3 {
-  background-image: url("../images/hero3.jpg");
-}
-.hero-visual img {
-  width: 100%;
-  height: auto;
-  border-radius: 20px;
-}
-/* FIX: make the 4 hero images a 2x2 grid */
-.hero-visuals {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 1rem;
-}
-
-.hero-visual {
-  min-height: 180px;
 }
